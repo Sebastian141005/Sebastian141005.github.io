@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rolando Miranda · Portafolio</title>
+<meta name="description" content="Portafolio de Rolando Miranda, estudiante de Ingeniería de Software en la Universidad Técnica de Ambato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1220;--panel:#121b2e;--linea:#22304d;--texto:#e6ecf5;--suave:#93a3bd;--acento:#2dd4bf;--acento2:#f2b705}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--texto);font:16px/1.6 Manrope,system-ui,sans-serif}
+a{color:var(--acento);text-decoration:none}
+.cont{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:rgba(11,18,32,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea);z-index:5}
+nav .cont{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font-family:"JetBrains Mono",monospace;color:var(--acento)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a{color:var(--suave)}nav ul a:hover{color:var(--texto)}
+.hero{padding:90px 0 70px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.etq{font-family:"JetBrains Mono",monospace;color:var(--acento);font-size:14px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.1;margin:10px 0 14px}
+h1 span{color:var(--acento2)}
+.hero p{color:var(--suave);max-width:520px}
+.botones{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:10px;font-weight:700;border:1px solid var(--acento)}
+.btn.lleno{background:var(--acento);color:#06211d}
+.foto{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--acento);margin-bottom:18px;display:block}
+.term{background:var(--panel);border:1px solid var(--linea);border-radius:14px;font:13px/1.7 "JetBrains Mono",monospace;overflow:hidden}
+.term .barra{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--linea)}
+.term .barra i{width:10px;height:10px;border-radius:50%;background:#ff5f56}.term .barra i:nth-child(2){background:#ffbd2e}.term .barra i:nth-child(3){background:#27c93f}
+.term pre{padding:16px;white-space:pre-wrap;color:var(--suave)}
+.term .k{color:var(--acento)}.term .s{color:var(--acento2)}
+section{padding:60px 0;border-top:1px solid var(--linea)}
+h2{font-size:28px;margin-bottom:24px}h2 small{font-family:"JetBrains Mono",monospace;color:var(--acento);font-size:15px;margin-right:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--linea);border-radius:14px;padding:20px}
+.card h3{font-size:16px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:12px "JetBrains Mono",monospace;padding:4px 10px;border-radius:99px;background:#0f2a33;color:var(--acento);border:1px solid #1b4b55}
+.proy{display:flex;flex-direction:column;gap:10px}
+.proy p{color:var(--suave);font-size:14px;flex:1}
+.proy.dest{grid-column:1/-1;border-color:var(--acento)}
+.proy ul{color:var(--suave);font-size:14px;padding-left:18px}
+.datos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.datos div{background:var(--panel);border:1px solid var(--linea);border-radius:12px;padding:16px;text-align:center}
+.datos b{display:block;font-size:26px;color:var(--acento2)}
+.datos span{color:var(--suave);font-size:13px}
+footer{padding:30px 0;text-align:center;color:var(--suave);font-size:13px;border-top:1px solid var(--linea)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:50px}nav ul{display:none}.datos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="cont"><b>&lt;rolando /&gt;</b><ul><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#tecnologias">Tecnologías</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#contacto">Contacto</a></li></ul></div></nav>
+
+<header class="cont hero">
+  <div>
+    <img class="foto" src="foto.jpg" alt="Foto de Rolando Miranda">
+    <div class="etq">Hola, mi nombre es</div>
+    <h1>Rolando <span>Miranda</span></h1>
+    <p>Estudiante de Ingeniería de Software en la Universidad Técnica de Ambato. Desarrollo aplicaciones web de punta a punta: interfaz, API y base de datos.</p>
+    <div class="botones">
+      <a class="btn lleno" href="#proyectos">Ver proyectos</a>
+      <a class="btn" href="https://github.com/Sebastian141005" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="term">
+    <div class="barra"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> rolando = {
+  universidad: <span class="s">"UTA - FISEI"</span>,
+  carrera: <span class="s">"Ingeniería de Software"</span>,
+  ciudad: <span class="s">"Ambato, Ecuador"</span>,
+  enfoque: [<span class="s">"web"</span>, <span class="s">"backend"</span>, <span class="s">"bases de datos"</span>],
+  aprendiendo: [<span class="s">"Docker"</span>, <span class="s">"Git Flow"</span>, <span class="s">"testing"</span>]
+};</pre>
+  </div>
+</header>
+
+<section id="sobre-mi"><div class="cont">
+  <h2><small>01.</small>Sobre mí</h2>
+  <p style="color:var(--suave);max-width:760px">Me gusta resolver problemas reales con código. En la universidad trabajo con estructuras de datos y programación orientada a objetos en Java y C++, y en equipo desarrollo RutaEC, un sistema web de venta de pasajes interprovinciales donde aplicamos Git Flow, pull requests, revisiones de código y despliegue con Docker.</p>
+  <div class="datos">
+    <div><b>3</b><span>módulos desarrollados en RutaEC</span></div>
+    <div><b>35+</b><span>commits en el proyecto de equipo</span></div>
+    <div><b>8</b><span>repositorios públicos</span></div>
+  </div>
+</div></section>
+
+<section id="tecnologias"><div class="cont">
+  <h2><small>02.</small>Tecnologías</h2>
+  <div class="grid">
+    <div class="card"><h3>Lenguajes</h3><div class="chips"><span class="chip">Java</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">SQL</span><span class="chip">HTML</span><span class="chip">CSS</span></div></div>
+    <div class="card"><h3>Frontend</h3><div class="chips"><span class="chip">React</span><span class="chip">Vite</span></div></div>
+    <div class="card"><h3>Backend y datos</h3><div class="chips"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span></div></div>
+    <div class="card"><h3>Herramientas</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Docker</span><span class="chip">VS Code</span><span class="chip">Eclipse</span><span class="chip">Postman</span></div></div>
+  </div>
+</div></section>
+
+<section id="proyectos"><div class="cont">
+  <h2><small>03.</small>Proyectos</h2>
+  <div class="grid">
+    <div class="card proy dest">
+      <h3>🚌 RutaEC · Venta de pasajes interprovinciales</h3>
+      <p>Proyecto en equipo de la materia Manejo y Configuración de Software. Mis aportes:</p>
+      <ul>
+        <li>Gestión de rutas con paradas intermedias y permisos por cooperativa.</li>
+        <li>Frecuencias de transporte con días de operación y resoluciones vigentes.</li>
+        <li>Programación de viajes: paradas, asientos y tarifas por tramo, sin cruces de horario del bus.</li>
+      </ul>
+      <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Express</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span></div>
+      <a href="https://github.com/Alan77-bot/rutaec-app" target="_blank" rel="noopener">Ver repositorio →</a>
+    </div>
+    <div class="card proy"><h3>Árbol BST de empresa</h3><p>Gestión de empleados con un árbol binario de búsqueda.</p><div class="chips"><span class="chip">C++</span></div><a href="https://github.com/Sebastian141005/arbol-bst-empresa-cpp" target="_blank" rel="noopener">Ver repositorio →</a></div>
+    <div class="card proy"><h3>Deberes de Estructura de Datos</h3><p>Ejercicios de listas, pilas, colas y árboles.</p><div class="chips"><span class="chip">C++</span></div><a href="https://github.com/Sebastian141005/Estructura-Datos-Deberes" target="_blank" rel="noopener">Ver repositorio →</a></div>
+    <div class="card proy"><h3>Ape4 · Estructura de Datos</h3><p>Práctica de estructuras de datos orientada a objetos.</p><div class="chips"><span class="chip">Java</span></div><a href="https://github.com/Sebastian141005/Ape4-Estructura" target="_blank" rel="noopener">Ver repositorio →</a></div>
+  </div>
+</div></section>
+
+<section id="contacto"><div class="cont" style="text-align:center">
+  <h2><small>04.</small>Contacto</h2>
+  <p style="color:var(--suave);margin-bottom:20px">¿Tienes un proyecto o una práctica en mente? Escríbeme por GitHub.</p>
+  <a class="btn lleno" href="https://github.com/Sebastian141005" target="_blank" rel="noopener">github.com/Sebastian141005</a>
+</div></section>
+
+<footer>Hecho con HTML y CSS · Publicado con GitHub Pages · © 2026 Rolando Miranda</footer>
+</body>
+</html>
